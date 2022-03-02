@@ -1,7 +1,7 @@
+// import { test } from 'media-typer';
 import Triangle from './../src/triangle.js';
 
 describe('Triangle', () => {
-
   test('should correctly create a triangle object with three lengths', () => {
     const triangle = new Triangle(2,4,5);
     expect(triangle.side1).toEqual(2);
@@ -17,6 +17,11 @@ describe('Triangle', () => {
   test('should correctly determine whether three lengths make a scalene triangle', () => {
     const scalTriangle = new Triangle(4,5,7)
     expect(scalTriangle.checkType()).toEqual("scalene triangle");
+  });
+
+  test('should correctly determine whether three lengths make an isosceles triangle', () => {
+    const isocTriangle = new Triangle(5,5,7)
+    expect(isocTriangle.checkType()).toEqual("isosceles triangle");
   });
 
 });
