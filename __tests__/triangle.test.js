@@ -1,4 +1,3 @@
-// import { test } from 'media-typer'
 import Triangle from './../src/triangle.js';
 
 describe('Triangle', () => {
